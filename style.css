@@ -2,21 +2,100 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  white-space: nowrap;
+}
+
+body {
+  overflow: hidden;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-right: 5px;
+}
+
+footer {
+  grid-column: 1 / span 2;
+}
+
+img {
+  padding-left: 5px;
 }
 
 .indexBody {
+  width: 100vw;
+  max-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 10% 80% 10%;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  overflow-y: scroll;
+  grid-row: 2 / 3;
+  grid-column: 2;
+}
+
+.showcase {
+  width: 100px;
+}
+
+.nav-icon {
+  height: 1.5rem;
+}
+
+.tavlaBeskrivning {
+  grid-column: 1 / span 2;
+}
+
+.return {
+  width: 40px;
 }
 
 .tavlaBody {
+  width: 100vw;
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 4fr 2fr 1fr;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 10% 8% 55% 10% 18%;
+}
+
+.varukorgBody {
+  width: 100vw;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.favoriterBody {
+  width: 100vw;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.tavla {
+  width: 200px;
+}
+
+.backArrow {
+  grid-column: 1 / span 2;
+}
+
+.kassaBody {
+  width: 100vw;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
 }
