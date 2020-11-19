@@ -17,6 +17,9 @@ nav {
   justify-content: flex-end;
   gap: 1rem;
   padding-right: 5px;
+  border-bottom: solid black 3px;
+  border-top: solid black 3px;
+  border-right: solid black 3px;
 }
 
 footer {
@@ -25,6 +28,12 @@ footer {
 
 img {
   padding-left: 5px;
+}
+
+header {
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
+  border-left: solid black 3px;
 }
 
 .indexBody {
@@ -45,11 +54,15 @@ img {
 }
 
 .showcase {
-  width: 100px;
+  width: 250px;
+  border: black;
+  border-style: solid;
+  margin-top: 1rem;
 }
 
 .nav-icon {
   height: 1.5rem;
+  padding-top: 3px;
 }
 
 .tavlaBeskrivning {
@@ -85,7 +98,10 @@ img {
 }
 
 .tavla {
-  width: 200px;
+  width: 300px;
+  border: black;
+  border-style: solid;
+  margin-left: 1rem;
 }
 
 .backArrow {
@@ -98,4 +114,9 @@ img {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.button {
+  max-width: 100vw;
+  width: 70%;
 }
