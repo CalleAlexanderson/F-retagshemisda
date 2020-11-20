@@ -7,6 +7,7 @@
 
 h1 {
   white-space: nowrap;
+  margin-left: 1rem;
 }
 
 body {
@@ -18,22 +19,50 @@ nav {
   gap: 1rem;
   padding-right: 5px;
   border-bottom: solid black 3px;
-  border-top: solid black 3px;
-  border-right: solid black 3px;
+  background-color: cadetblue;
 }
 
 footer {
   grid-column: 1 / span 2;
+  border-top: solid black;
 }
 
 img {
-  padding-left: 5px;
+  margin-left: 5px;
 }
 
 header {
-  border-top: solid black 3px;
   border-bottom: solid black 3px;
-  border-left: solid black 3px;
+  background-color: cadetblue;
+}
+
+table {
+  border-spacing: 0;
+  padding-left: 1rem;
+}
+
+td {
+  border-left: solid black;
+  border-top: solid black;
+}
+
+ul {
+  list-style: none;
+  padding-left: 4px;
+}
+
+label {
+  color: whitesmoke;
+}
+
+DivButton1 {
+  max-width: 100vw;
+  width: 30%;
+}
+
+DivButton2 {
+  max-width: 100vw;
+  width: 15%;
 }
 
 .indexBody {
@@ -51,6 +80,7 @@ header {
   overflow-y: scroll;
   grid-row: 2 / 3;
   grid-column: 2;
+  background-color: burlywood;
 }
 
 .showcase {
@@ -58,6 +88,8 @@ header {
   border: black;
   border-style: solid;
   margin-top: 1rem;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .nav-icon {
@@ -78,23 +110,15 @@ header {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 10% 8% 55% 10% 18%;
-}
-
-.varukorgBody {
-  width: 100vw;
-  max-height: 100vh;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10% 8% 50% 10% 20%;
 }
 
 .favoriterBody {
   width: 100vw;
   max-height: 100vh;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 7fr 2fr;
 }
 
 .tavla {
@@ -113,10 +137,98 @@ header {
   max-height: 100vh;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-rows: 1fr 7fr 1fr;
+}
+
+.varukorgBody {
+  width: 100vw;
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
 }
 
 .button {
   max-width: 100vw;
-  width: 70%;
+  width: 500px;
+}
+
+.kassaMain {
+  grid-column: 1 / span 2;
+  min-height: 50vh;
+  overflow-y: scroll;
+}
+
+.kassaFooter {
+  grid-column: 1 / span 2;
+  max-height: 30vh;
+}
+
+.favoriterMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow-y: scroll;
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  padding-left: 5rem;
+  background-color: burlywood;
+}
+
+.favoriterFooter {
+  display: flexbox;
+  justify-content: space-around;
+}
+
+.socialMedia {
+  min-width: 1rem;
+  max-width: 2.5rem;
+  padding-top: 3px;
+}
+
+.sidebar {
+  border-right: solid black;
+  background-color: darkblue;
+}
+
+.varukorgMain {
+  overflow-y: scroll;
+  grid-column: 1 / span 2;
+}
+
+.tdButtons {
+  padding-left: 10px;
+  border: hidden;
+}
+
+.beskrivning {
+  padding-bottom: 5px;
+}
+
+.endTd {
+  border-right: solid black;
+}
+
+.topTdEnd {
+  border-right: solid black;
+  border-bottom: solid black;
+}
+
+.topTd {
+  border-bottom: solid black;
+}
+
+.showcaseBottom {
+  width: 100px;
+  border: solid black;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.sidebarP {
+  color: whitesmoke;
+}
+
+.heart-icon {
+  height: 2rem;
 }
